@@ -236,7 +236,7 @@ h2
 
 .AboutMeTable table
 {
-	cellspacing: 30px;
+	border-spacing: 30px;
 }
 
 gallery { 
