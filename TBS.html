@@ -10,7 +10,29 @@
 	<body>
 		<div class="container">
 			
-			<?php Include 'Templates/header.html' ?>
+			<div class="stripes">
+				<span></span>
+			</div>
+			
+			<div class="header">
+				<a href="./" style="cursor: pointer;"><span>Alexander Taylor, C++ Game Programmer</span></a>
+			</div>
+			
+			<div class="stripes">
+				<span></span>
+			</div>
+			
+			<div class="nav">
+				<a href="./" style="cursor: pointer;">Projects</a>
+				<a href=".//aboutme.html" style="cursor: pointer;">About Me</a>
+				<div class="clearer">
+					<span></span>
+				</div>
+			</div>
+			
+			<div class="stripes">
+				<span></span>
+			</div>
 			
 			<div class="main">
 			
@@ -25,19 +47,36 @@
                             simple level editor. I did this in C# and used C++ for the rendering via CLR. The idea for the level editor was to creat something simple that functioned similarly
                             to the editor that the level designers had previously used and give an easy to inturpret output for our game engine. I also spent a bit of time during this project
                             working on the menus using the already implemented GUI library.
-                            </br>
+                            <br>
                             The game was coded in C++ using a few third party tools including HGE, FMOD and tinyxml
                          </p>
-                        </br>
+                        <br>
                         <h2>
                             Click <a href="/GameDownloads/Mechadin.exe" download>here</a> to download the game!
                         </h2>
-                        </br></br>
-                        <?php
-                            for ($x = 1; $x <= 4; $x++) { 
-                                echo "<a href=\"img/GameScreenshots/TBS/TBS_$x.png\"> <img src=\"img/GameScreenshots/TBS/TBS_$x.png\" width=\"150\" height=\"100\"></a>";
-                            }
-                        ?>
+                        <br><br>
+					<gallery>
+						<div class="galImg">
+							<a target="_blank" href="./img/GameScreenshots/TBS/TBS_1.png">
+								<img src="./img/GameScreenshots/TBS/TBS_1.png" alt="TBS_1" >
+							</a>
+						</div>
+						<div class="galImg">
+							<a target="_blank" href="./img/GameScreenshots/TBS/TBS_2.png">
+								<img src="./img/GameScreenshots/TBS/TBS_2.png" alt="TBS_2" >
+							</a>
+						</div>
+						<div class="galImg">
+							<a target="_blank" href="./img/GameScreenshots/TBS/TBS_3.png">
+								<img src="./img/GameScreenshots/TBS/TBS_3.png" alt="TBS_3" >
+							</a>
+						</div>
+						<div class="galImg">
+							<a target="_blank" href="./img/GameScreenshots/TBS/TBS_4.png">
+								<img src="./img/GameScreenshots/TBS/TBS_4.png" alt="TBS_4" >
+							</a>
+						</div>
+					</gallery>
 						
 					</div>
 				
