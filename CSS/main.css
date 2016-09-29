@@ -240,6 +240,11 @@ h2
 	border-collapse: separate;
 }
 
+.AboutMeTable td
+{
+	padding: 0px;
+}
+
 gallery { 
   padding: .5vw;
   font-size: 0;
