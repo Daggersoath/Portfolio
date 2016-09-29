@@ -245,11 +245,14 @@ gallery div {
   -ms-flex: auto;
   flex: auto; 
   width: 200px; 
-  margin: .5vw; 
+  margin: .5vw;
+  min-width: 0;
 }
 gallery div img { 
-  width: 100%; 
-  height: auto; 
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
 }
 
 gallery div:hover img{
