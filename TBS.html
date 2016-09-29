@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type">
+		<meta content="Portfolio for Alexander Taylor" name="description">
+		<meta content="Alexander Taylor" name="author">
+		<link href="CSS/main.css" media="screen" rel="stylesheet" type="text/css">
+		<title>Alexander Taylor Portfolio</title>
+	</head>
+	<body>
+		<div class="container">
+			
+			<?php Include 'Templates/header.html' ?>
+			
+			<div class="main">
+			
+				<div class="left">
+					
+					<div class="content" id = "leftContent">
+						
+                        <h1>Title: Mechadin</h1>
+                        <p>
+                            Mechadin is a Turn Based Strategy game designed and developed by 11 students from the game assembly. This was our final project during the first year.
+                            The project was developed for 8 weeks halftime with 4 programmers, 3 level designers and 4 artists. During this project my main responsability was to create a
+                            simple level editor. I did this in C# and used C++ for the rendering via CLR. The idea for the level editor was to creat something simple that functioned similarly
+                            to the editor that the level designers had previously used and give an easy to inturpret output for our game engine. I also spent a bit of time during this project
+                            working on the menus using the already implemented GUI library.
+                            </br>
+                            The game was coded in C++ using a few third party tools including HGE, FMOD and tinyxml
+                         </p>
+                        </br>
+                        <h2>
+                            Click <a href="/GameDownloads/Mechadin.exe" download>here</a> to download the game!
+                        </h2>
+                        </br></br>
+                        <?php
+                            for ($x = 1; $x <= 4; $x++) { 
+                                echo "<a href=\"img/GameScreenshots/TBS/TBS_$x.png\"> <img src=\"img/GameScreenshots/TBS/TBS_$x.png\" width=\"150\" height=\"100\"></a>";
+                            }
+                        ?>
+						
+					</div>
+				
+				</div>
+
+				<div class="clearer">
+                    <span></span>
+                </div>
+				
+			</div>
+
+			<div class="footer">
+				<div class="bottom">
+					<span class="left">
+						&copy; 2016 <a href="http://alextheprog.me">http://alextheprog.me</a>. Valid <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> &amp; <a href="http://validator.w3.org/check?uri=referer">XHTML</a>.
+					</span>
+					
+					<div class="clearer">
+						<span></span>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

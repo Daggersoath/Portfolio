@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type">
+		<meta content="Portfolio for Alexander Taylor" name="description">
+		<meta content="Alexander Taylor" name="author">
+		<link href="CSS/main.css" media="screen" rel="stylesheet" type="text/css">
+		<title>Alexander Taylor Portfolio</title>
+	</head>
+	<body>
+		<div class="container">
+			
+			<?php Include 'Templates/header.html' ?>
+			
+			<div class="main">
+			
+				<div class="left">
+					
+					<div class="content" id = "leftContent">
+						
+                        <h1>Title: Blood Metal Exorcism</h1>
+                        <p>
+                            BME is a First Person Shooter designed and developed by 13 students from the game assembly. This was our third project during the second year and our first project to include both physics and networking.
+                            The project was developed for 9 weeks halftime with 4 programmers, 3 level designers, 3 artists and 2 technical artists. During this project I got to work with havok integration into our custom engine, 
+                            synchornising enemies and players over the network using the RakNet socket library and also creating a wrapper to let us interact with FMOD via Lua.
+                            </br>
+                            The game was coded in C++ using a few third party tools including D3D11, FMOD, Lua, Havok and RakNet
+                        </p>
+                        </br>
+                        <h2>
+                            Click <a href="/GameDownloads/BloodMetalExorcism.exe" download>here</a> to download the game!
+                        </h2>
+                        </br></br>
+                        <?php
+                            for ($x = 1; $x <= 17; $x++) { 
+                                echo "<a href=\"img/GameScreenshots/FPS/FPS_$x.png\"> <img src=\"img/GameScreenshots/FPS/FPS_$x.png\" width=\"150\" height=\"100\"></a>";
+                            }
+                        ?>
+						
+					</div>
+				
+				</div>
+
+				<div class="clearer">
+                    <span></span>
+                </div>
+				
+			</div>
+
+			<div class="footer">
+				<div class="bottom">
+					<span class="left">
+						&copy; 2016 <a href="http://alextheprog.me">http://alextheprog.me</a>. Valid <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> &amp; <a href="http://validator.w3.org/check?uri=referer">XHTML</a>.
+					</span>
+					
+					<div class="clearer">
+						<span></span>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

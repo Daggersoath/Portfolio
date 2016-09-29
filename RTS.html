@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type">
+		<meta content="Portfolio for Alexander Taylor" name="description">
+		<meta content="Alexander Taylor" name="author">
+		<link href="CSS/main.css" media="screen" rel="stylesheet" type="text/css">
+		<title>Alexander Taylor Portfolio</title>
+	</head>
+	<body>
+		<div class="container">
+			
+			<?php Include 'Templates/header.html' ?>
+			
+			<div class="main">
+			
+				<div class="left">
+					
+					<div class="content" id = "leftContent">
+						
+                        <h1>Title: Techno Titans</h1>
+                        <p>
+                            Techno Titans is a Real Time Strategy game designed and developed by 13 students from the game assembly. This was our second project during the second year and was our first introduction to working with AI
+                            in games. The project was developed for 10 weeks halftime with 4 programmers, 3 level designers, 3 artists and 2 technical artists. During this project I got to work with creating and designing an AI to play
+                            against the player using influence maps. The AI would use multiple influence maps for monotoring hot spots on the map including, spotted player units, death locations, capture points and its own units. Based
+                            on the value from these maps it sends units to capture, attack or defend different points on the map. I also got to work with the scripting creating an interface for our level designers to interact with the
+                            game. Using this they were able to design events and features to their hearts content. 
+                            </br>
+                            The game was coded in C++ using a few third party tools including D3D11, FMOD and Lua
+                         </p>
+                        </br>
+                        <h2>
+                            Click <a href="/GameDownloads/TechnoTitans.exe" download>here</a> to download the game!
+                        </h2>
+                        </br></br>
+                        <?php
+                            for ($x = 2; $x <= 19; $x++) { 
+                                echo "<a href=\"img/GameScreenshots/RTS/RTS_$x.jpg\"> <img src=\"img/GameScreenshots/RTS/RTS_$x.jpg\" width=\"150\" height=\"100\"></a>";
+                            }
+                        ?>
+						
+					</div>
+				</div>
+
+				<div class="clearer">
+                    <span></span>
+                </div>
+				
+			</div>
+
+			<div class="footer">
+				<div class="bottom">
+					<span class="left">
+						&copy; 2016 <a href="http://alextheprog.me">http://alextheprog.me</a>. Valid <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> &amp; <a href="http://validator.w3.org/check?uri=referer">XHTML</a>.
+					</span>
+					
+					<div class="clearer">
+						<span></span>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>
