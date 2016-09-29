@@ -237,6 +237,7 @@ h2
 .AboutMeTable table
 {
 	border-spacing: 30px;
+	border-collapse: separate;
 }
 
 gallery { 
