@@ -231,12 +231,12 @@ h2
 
 .AboutMeTable img
 {
-	border : "0px";
+	border: "0px";
 }
 
-.AboutMeTable
+.AboutMeTable table
 {
-	cellspacing : "30px";
+	cellspacing: "30px";
 }
 
 gallery { 
