@@ -233,8 +233,7 @@ div.galImg {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    width: 300px;
-    height: 200px;
+    width: 180px;
 }
 
 div.galImg:hover {
