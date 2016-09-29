@@ -229,6 +229,11 @@ h2
 	color:#888;
 }
 
+.AboutMeTable
+{
+	cellspacing = "30px";
+}
+
 gallery { 
   padding: .5vw;
   font-size: 0;
