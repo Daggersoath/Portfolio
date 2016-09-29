@@ -249,3 +249,7 @@ div.galDesc {
     padding: 15px;
     text-align: center;
 }
+
+div.gal {
+    align: center;
+}
