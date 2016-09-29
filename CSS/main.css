@@ -229,6 +229,16 @@ h2
 	color:#888;
 }
 
+.AboutMeTable img
+{
+	border: 0px;
+}
+
+.AboutMeTable table
+{
+	cellspacing: 30px;
+}
+
 gallery { 
   padding: .5vw;
   font-size: 0;
