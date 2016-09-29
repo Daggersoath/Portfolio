@@ -229,9 +229,14 @@ h2
 	color:#888;
 }
 
+.AboutMeTable img
+{
+	border : "0px";
+}
+
 .AboutMeTable
 {
-	cellspacing = "30px";
+	cellspacing : "30px";
 }
 
 gallery { 
