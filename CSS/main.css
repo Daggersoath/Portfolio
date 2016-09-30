@@ -64,6 +64,7 @@ h2
 .clearer
 {
 	clear:both;
+	width: 100%;
 }
 
 .stripes
@@ -103,31 +104,20 @@ h2
 .container
 {
 	border:3px solid #444;
-	border-top:none;
-}
-
-.main
-{
 	background:#303030;
-	border-bottom:1px solid #2A2A2A;
-	border-left:1px solid #2A2A2A;
-}
-
-.main .left
-{
-	width:64%;
-}
-
-.main .right
-{
-	width:36%;
+	text-align: left;
 }
 
 .content
 {
-	border-left:1px solid #444;
-	border-top:1px solid #444;
 	padding:16px;
+	margin: auto;
+	border-collapse: collapse;
+}
+
+.content div
+{
+	display: block;
 }
 
 .content h1
@@ -152,6 +142,12 @@ h2
 .content .descr
 {
 	margin-bottom:5px;
+}
+
+.content .border
+{
+	border: 2px solid #444;
+	text-decoration: none
 }
 
 .nav
@@ -245,40 +241,63 @@ h2
 	padding: 0px;
 }
 
-gallery { 
-  padding: .5vw;
-  font-size: 0;
-  display: -ms-flexbox;
-  -ms-flex-wrap: wrap;
-  -ms-flex-direction: column;
-  -webkit-flex-flow: row wrap; 
-  flex-flow: row wrap; 
-  display: -webkit-box;
-  display: flex;
-}
-gallery div { 
-  -webkit-box-flex: auto;
-  -ms-flex: auto;
-  flex: auto; 
-  width: 200px; 
-  margin: .5vw;
-  min-width: 0;
-}
-gallery div img { 
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  object-fit: contain;
-}
-
-gallery div:hover img{
-  transform: scale(3); -webkit-transform: scale(3);
-  transition:transform .4s ease;
+gallery
+{ 
+	padding: .5vw;
+	font-size: 12px;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;display: -webkit-flex;
+   display: flex;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   /* You can set flex-wrap and flex-direction individually */
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   /* Or do it all in one line with flex flow */
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   /* tweak the where items line up on the row */
+   /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+   -webkit-align-content: flex-end;
+   align-content: flex-end;
 }
 
+gallery div
+{
+	width: auto;
+}
 
-@media screen and (max-width: 400px) {
-  gallery div { margin: 0; }
-  gallery { padding: 0; }
-  
+gallery .imgDiv
+{ 
+	-webkit-box-flex: auto;
+	-ms-flex: auto;
+	flex: auto; 
+	width: 200px;
+	margin: .5vw;
+	min-width: 0;
+}
+
+gallery .imgDiv img
+{ 
+	width: 100%;
+	max-width: 300px;
+	height: auto;
+	object-fit: contain;
+}
+
+gallery .imgDiv:hover img
+{
+	transform: scale(3); -webkit-transform: scale(3);
+	transition:transform .4s ease;
+}
+
+@media screen and (max-width: 400px)
+{
+	gallery .imgDiv { margin: 0; }
+	gallery { padding: 0; }
 }
